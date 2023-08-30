@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
-    color: #fff
 }
 /* Bricolage Grotesque */
 
@@ -21,6 +20,22 @@ header {
         #060606 30px
     );
 }
+.mini-header {
+    height: 300px;
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    
+    background-image: repeating-linear-gradient(
+        45deg,
+        #000000,
+        #000000 15px,
+        #060606 15px,
+        #060606 30px
+    );
+}
+
 nav {
     display: flex;
     padding: 1% 4%;
@@ -91,12 +106,12 @@ nav {
 .logo:hover {
     /* translate: 0 -1px; */
     /* text-shadow: 0 0 4px #ffffff, 0 0 12px #ffffff; */
-    text-shadow: 0 0 12px #3c53bb;
+    /* text-shadow: 0 0 12px #3c53bb; */
     background-image: linear-gradient(45deg, #3ecfff, #4f92ff);
 }
 .logo:active {
     /* translate: 0 0; */
-    text-shadow: 0 0 12px #3c53bb, 0 0 18px #3c53bb;
+    text-shadow: 0 0 8px #3c53bb76, 0 0 12px #3c53bb;
 }
 
 .glow {
@@ -122,7 +137,7 @@ nav {
     font-weight: 800;
     font-size: 10vw;
     color: #ddd;
-    margin-bottom: 30px;
+    margin-bottom: 5vh;
 }
 .glow-title {
     font-family: 'Bricolage Grotesque';
@@ -132,43 +147,111 @@ nav {
     background-image: linear-gradient(45deg, #58cff6, #4f7bff);
 }
 
+.mini-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+.mini-title h1 {
+    font-family: 'Bricolage Grotesque';
+    font-weight: 800;
+    font-size: 70px;
+    color: #ddd;
+    margin-bottom: 20px;
+}
+
+.mini-title-grad {
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(#00000000, #000000);
+    
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 50%;
+    text-align: center;
+    height: 100px;
+    transform: translate(-50%, -100%);
+}
+
 .title-about {
-    margin-bottom: 50px;
-    font-size: 2vw;
+    margin-bottom: 8vh;
+    font-size: 21px;
     width: 50vw;
     position: relative;
     left: 50%;
     transform: translate(-50%, 0);
+    color: #ccc;
 }
 .sel-text {
     /* background-image: linear-gradient(#5d80ff3a, #5d80ff21); */
     background-image: linear-gradient(45deg, #76ddff, #7194ff);
     border-radius: 0.5vw;
     /* padding: 0 0.5vw; */
-    font-size: 2vw;
+    font-size: 21px;
 }
 
 .title-stack {
     display: flex;
     justify-content: center;
+    margin-bottom: 10px;
 }
 .stack-role {
     display: flex;
     justify-content: center;
 
-    padding: 0.8vw;
-    margin: 0 0.4vw;
+    padding: 6px;
+    margin: 0 4px;
     background-color: #252525;
     width: fit-content;
-    border-radius: 0.7vw;
-    font-size: 1.7vw;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #fff;
 }
 .color-circle {
-    width: 1.5vw;
-    height: 1.5vw;
-    margin: 0.5vw 1vw 0 0.5vw;
-    border-radius: 0.8vw;
+    width: 15px;
+    height: 15px;
+    margin: 4px 7px 0 4px;
+    border-radius: 8px;
 }
+.stack-role p {
+    margin-right: 2px;
+}
+
+.title-buttons {
+    display: flex;
+    justify-content: center;
+}
+.title-button {
+    display: flex;
+    justify-content: center;
+
+    padding: 6px;
+    margin: 0 4px;
+    width: fit-content;
+    border-radius: 6px;
+    font-size: 16px;
+    text-decoration: none;
+
+    transition: 0.3s;
+    background-color: #fcfcfc;
+    color: #252525;
+}
+.title-button p {
+    margin-left: 2px;
+    margin-right: 2px;
+}
+.title-button:hover {
+    background-color: #464646;
+    color: #fff;
+}
+.title-button:active {
+    background-color: #909090;
+    color: #fff;
+}
+
 .python { background-color: #3976A5; }
 .lua { background-color: #00007C; }
 .html { background-color: #E44D26; }
@@ -191,6 +274,9 @@ nav {
     header {
         display: none;
     }
+    .mini-header {
+        display: none;
+    }
     .elements {
         display: none;
     }
@@ -204,6 +290,9 @@ nav {
 
 @media(max-height: 500px) {
     header {
+        display: none;
+    }
+    .mini-header {
         display: none;
     }
     .elements {
