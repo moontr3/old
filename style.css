@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff
+}
+/* Bricolage Grotesque */
+
+header {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    
+    background-image: repeating-linear-gradient(
+        45deg,
+        #000000,
+        #000000 15px,
+        #060606 15px,
+        #060606 30px
+    );
+}
+nav {
+    display: flex;
+    padding: 1% 4%;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    position: relative;
+    display: inline-block;
+    margin: 12px 8px;
+    position: relative;
+}
+.nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    text-shadow: none;
+    transition: 0.1s;
+}
+/* .nav-links ul li:hover {
+    translate: 0 -1px;
+}
+.nav-links ul li:active {
+    translate: 0 0;
+} */
+.nav-links ul li a:hover {
+    text-shadow: 0 0 4px #ffffff, 0 0 12px #ffffff;
+}
+.nav-links ul li a:active {
+    text-shadow: 0 0 6px #ffffff;
+}
+.header-gh {
+    width: 16px;
+    height: 16px;
+    transition: 0.1s;
+}
+.header-gh:hover {
+    filter: drop-shadow(0 0 4px #ffffff);
+}
+.header-gh:active {
+    filter: drop-shadow(0 0 5px #ffffff97);
+}
+
+.logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    text-shadow: none;
+    transition: 0.1s;
+    font-weight: 700;
+    font-family: 'Bricolage Grotesque';
+
+    background-clip: text;
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background-color: #fff;
+}
+.logo:hover {
+    /* translate: 0 -1px; */
+    /* text-shadow: 0 0 4px #ffffff, 0 0 12px #ffffff; */
+    text-shadow: 0 0 12px #3c53bb;
+    background-image: linear-gradient(45deg, #3ecfff, #4f92ff);
+}
+.logo:active {
+    /* translate: 0 0; */
+    text-shadow: 0 0 12px #3c53bb, 0 0 18px #3c53bb;
+}
+
+.glow {
+    background-clip: text;
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+.title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+.title-name h1 {
+    font-family: 'Bricolage Grotesque';
+    font-weight: 800;
+    font-size: 10vw;
+    color: #ddd;
+    margin-bottom: 30px;
+}
+.glow-title {
+    font-family: 'Bricolage Grotesque';
+    font-weight: 800;
+    font-size: 10vw;
+    margin-left: 2vw;
+    background-image: linear-gradient(45deg, #58cff6, #4f7bff);
+}
+
+.title-about {
+    margin-bottom: 50px;
+    font-size: 2vw;
+    width: 50vw;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.sel-text {
+    /* background-image: linear-gradient(#5d80ff3a, #5d80ff21); */
+    background-image: linear-gradient(45deg, #76ddff, #7194ff);
+    border-radius: 0.5vw;
+    /* padding: 0 0.5vw; */
+    font-size: 2vw;
+}
+
+.title-stack {
+    display: flex;
+    justify-content: center;
+}
+.stack-role {
+    display: flex;
+    justify-content: center;
+
+    padding: 0.8vw;
+    margin: 0 0.4vw;
+    background-color: #252525;
+    width: fit-content;
+    border-radius: 0.7vw;
+    font-size: 1.7vw;
+}
+.color-circle {
+    width: 1.5vw;
+    height: 1.5vw;
+    margin: 0.5vw 1vw 0 0.5vw;
+    border-radius: 0.8vw;
+}
+.python { background-color: #3976A5; }
+.lua { background-color: #00007C; }
+.html { background-color: #E44D26; }
+.css { background-color: #1C76B8; }
+
+
+.too-small-screen {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+}
+
+@media(max-width: 350px) {
+    header {
+        display: none;
+    }
+    .elements {
+        display: none;
+    }
+    footer {
+        display: none;
+    }
+    .too-small-screen {
+        display: block;
+    }
+}
+
+@media(max-height: 500px) {
+    header {
+        display: none;
+    }
+    .elements {
+        display: none;
+    }
+    footer {
+        display: none;
+    }
+    .too-small-screen {
+        display: block;
+    }
+}
