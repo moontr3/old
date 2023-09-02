@@ -284,6 +284,10 @@ nav {
 }
 .box-title {
     background-color: #ffffff08;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -308,7 +312,6 @@ nav {
 .box-buttons {
     display: flex;
     justify-content: flex-end;
-    align-items: flex-end;
     margin-top: 6px;
 }
 .box-button {
@@ -327,6 +330,57 @@ nav {
 }
 .box-button:active {
     background-image: linear-gradient(45deg, #227591, #25467a);
+}
+
+.title-box {
+    background-image: repeating-linear-gradient(
+        45deg,
+        #000000,
+        #000000 15px,
+        #060606 15px,
+        #060606 30px
+    );
+    border-radius: 15px;
+    max-width: 600px;
+    padding: 15px;
+    margin: 30px 60px 30px 0;
+    color: #ffffffd0;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    box-shadow: 0 0 6px #0000001a;
+    transition: ease-in-out 0.12s;
+}
+.title-box-title {
+    background-color: #ffffff08;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-radius: 15px;
+    padding: 15px;
+    margin: -15px;
+}
+.title-box h2 {
+    font-family: 'Bricolage Grotesque';
+    font-weight: 600;
+    background-color: #fff;
+}
+.title-box:hover {
+    transform: translate(-50%, -3px);
+}
+.title-box:hover h2 {
+    background-image: linear-gradient(0deg, #58cff6, #4f7bff);
+}
+.title-box:hover .title-box-title {
+    background-image: linear-gradient(45deg, #3ecfff10, #4f92ff10);
+}
+.box-title-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 7px;
 }
 
 .body-title p {
