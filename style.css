@@ -52,7 +52,6 @@ nav {
     position: relative;
     display: inline-block;
     margin: 12px 8px;
-    position: relative;
 }
 .nav-links ul li a {
     /* color: #fff; */
@@ -305,6 +304,29 @@ nav {
 }
 .box:hover .box-title {
     background-image: linear-gradient(45deg, #3ecfff10, #4f92ff10);
+}
+.box-buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: 6px;
+}
+.box-button {
+    padding: 6px 10px;
+    margin-left: 8px;
+    background-color: #ffffff00;
+    border-radius: 8px;
+    align-self: flex-end;
+    text-decoration: none;
+    color: #fff;
+    border: 1px dashed #ffffff70;
+}
+.box-button:hover {
+    background-image: linear-gradient(45deg, #58cff6, #4f7bff);
+    border: 1px solid #ffffff00;
+}
+.box-button:active {
+    background-image: linear-gradient(45deg, #227591, #25467a);
 }
 
 .body-title p {
