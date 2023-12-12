@@ -35,6 +35,21 @@ header {
         #060606 30px
     );
 }
+.big-enough-header {
+    height: 400px;
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    
+    background-image: repeating-linear-gradient(
+        45deg,
+        #000000,
+        #000000 15px,
+        #060606 15px,
+        #060606 30px
+    );
+}
 
 nav {
     display: flex;
@@ -165,6 +180,10 @@ nav {
     color: #ddd;
     margin-bottom: 20px;
 }
+.mini-title-about {
+    color: #ddd;
+    margin-bottom: 20px;
+}
 
 .mini-title-grad {
     display: flex;
@@ -262,6 +281,7 @@ nav {
 .lua { background-color: #00007C; }
 .html { background-color: #E44D26; }
 .css { background-color: #1C76B8; }
+.cpp { background-color: #13609E; }
 
 .box {
     background-image: repeating-linear-gradient(
@@ -300,10 +320,18 @@ nav {
     font-weight: 600;
     background-color: #fff;
 }
+.box h1 {
+    font-weight: 600;
+    background-color: #fff;
+    font-size: 24px;
+}
 .box:hover {
     transform: translate(-50%, -3px);
 }
 .box:hover h2 {
+    background-image: linear-gradient(0deg, #58cff6, #4f7bff);
+}
+.box:hover h1 {
     background-image: linear-gradient(0deg, #58cff6, #4f7bff);
 }
 .box:hover .box-title {
@@ -497,4 +525,36 @@ footer h1 {
     .too-small-screen {
         display: block;
     }
+}
+
+@font-face {
+    font-family: 'fs picto';
+    src: url('fonts/fspicto.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'FS Roundcraft';
+    src: url('fonts/FSRoundcraft.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Monocode II';
+    src: url('fonts/MonocodeII.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.fs-picto {
+    font-family: 'fs picto';
+}
+.fs-roundcraft {
+    font-family: 'FS Roundcraft';
+}
+.monocode {
+    font-family: 'Monocode II';
 }
