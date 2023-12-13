@@ -548,6 +548,13 @@ footer h1 {
     font-style: normal;
     font-display: swap;
 }
+@font-face {
+    font-family: 'fs outgroup';
+    src: url('fonts/fsoutgroup.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 
 .fs-picto {
     font-family: 'fs picto';
@@ -557,4 +564,7 @@ footer h1 {
 }
 .monocode {
     font-family: 'Monocode II';
+}
+.fs-outgroup {
+    font-family: 'fs outgroup';
 }
