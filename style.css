@@ -530,29 +530,31 @@ footer h1 {
 @font-face {
     font-family: 'fs picto';
     src: url('fonts/fspicto.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: 'FS Roundcraft';
     src: url('fonts/FSRoundcraft.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: 'Monocode II';
     src: url('fonts/MonocodeII.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: 'fs outgroup';
     src: url('fonts/fsoutgroup.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'fs RID';
+    src: url('fonts/fsRID.woff2') format('woff2');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'fs brushstroke';
+    src: url('fonts/brushstroke.woff2') format('woff2');
     font-display: swap;
 }
 
@@ -567,4 +569,10 @@ footer h1 {
 }
 .fs-outgroup {
     font-family: 'fs outgroup';
+}
+.fs-rid {
+    font-family: 'fs RID';
+}
+.fs-brushstroke {
+    font-family: 'fs brushstroke';
 }
