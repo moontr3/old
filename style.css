@@ -491,6 +491,10 @@ footer h1 {
     text-align: center;
 }
 
+.bigger {
+    font-size: 21px;
+}
+
 @media(max-width: 319px) {
     header {
         display: none;
@@ -554,7 +558,22 @@ footer h1 {
 }
 @font-face {
     font-family: 'fs brushstroke';
-    src: url('fonts/brushstroke.woff2') format('woff2');
+    src: url('fonts/fsbrushstroke.woff2') format('woff2');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'fs followup';
+    src: url('fonts/fsfollowup.woff2') format('woff2');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'fs letus';
+    src: url('fonts/fsletus.woff2') format('woff2');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'fs a pixel away';
+    src: url('fonts/fsapixelaway.woff2') format('woff2');
     font-display: swap;
 }
 
@@ -575,4 +594,13 @@ footer h1 {
 }
 .fs-brushstroke {
     font-family: 'fs brushstroke';
+}
+.fs-followup {
+    font-family: 'fs followup';
+}
+.fs-letus {
+    font-family: 'fs letus';
+}
+.fs-apa {
+    font-family: 'fs a pixel away';
 }
