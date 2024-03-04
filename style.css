@@ -576,6 +576,11 @@ footer h1 {
     src: url('fonts/fsapixelaway.woff2') format('woff2');
     font-display: swap;
 }
+@font-face {
+    font-family: 'fs gigolo';
+    src: url('fonts/fsgigolo.woff2') format('woff2');
+    font-display: swap;
+}
 
 .fs-picto {
     font-family: 'fs picto';
@@ -603,4 +608,7 @@ footer h1 {
 }
 .fs-apa {
     font-family: 'fs a pixel away';
+}
+.fs-gigolo {
+    font-family: 'fs gigolo';
 }
