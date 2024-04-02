@@ -581,6 +581,11 @@ footer h1 {
     src: url('fonts/fsgigolo.woff2') format('woff2');
     font-display: swap;
 }
+@font-face {
+    font-family: 'fs haiserifs';
+    src: url('fonts/fshaiserifs.woff2') format('woff2');
+    font-display: swap;
+}
 
 .fs-picto {
     font-family: 'fs picto';
@@ -612,3 +617,7 @@ footer h1 {
 .fs-gigolo {
     font-family: 'fs gigolo';
 }
+.fs-haiserifs {
+    font-family: 'fs haiserifs';
+}
+
